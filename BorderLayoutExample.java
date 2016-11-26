@@ -77,35 +77,39 @@ class BorderLayoutExample implements ActionListener{
 		
 		
 		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
 		//checkboxes
-		JCheckBox chk1=new JCheckBox("check box 1");
+		JCheckBox chk1=new JCheckBox("chK1");
 		chk1.setName("chk1");
-		
-		JCheckBox chk2=new JCheckBox("check box 2");
+		chk1.setBounds(10, 10, 20, 20);
+		chk1.addActionListener(new BorderLayoutExample());
+		panel2.add(chk1);
+	
+		JCheckBox chk2=new JCheckBox("chK2");
 		chk2.setName("chk2");
-
+		chk2.setBounds(10, 10, 20, 20);
+		chk2.addActionListener(new BorderLayoutExample());
+		panel3.add(chk2);
+	
 		
-		JCheckBox chk3=new JCheckBox("check box 3");
+		
+		JCheckBox chk3=new JCheckBox("chk3");
 		chk3.setName("chk3");
+		chk3.setBounds(10, 10, 20, 20);
+		chk3.addActionListener(new BorderLayoutExample());
+		panel4.add(chk3);
+	
 		
-		JCheckBox chk4=new JCheckBox("check box 4");
+		JCheckBox chk4=new JCheckBox("chk4");
 		chk4.setName("chk4");
-		
-		
-		
-		
-		
+		chk4.setBounds(10, 10, 20, 20);
+		chk4.addActionListener(new BorderLayoutExample());
+		panel5.add(chk4);
+	
+		JCheckBox chk5=new JCheckBox("chk5");
+		chk5.setName("chk5");
+		chk5.setBounds(10, 10, 20, 20);
+		chk5.addActionListener(new BorderLayoutExample());
+		panel1.add(chk5);
 		con.add(panel1,BorderLayout.EAST);
 		con.add(panel2,BorderLayout.SOUTH);
 		con.add(panel3,BorderLayout.WEST);
@@ -121,8 +125,6 @@ class BorderLayoutExample implements ActionListener{
 	public void  actionPerformed(ActionEvent al){
 		JComponent comp = (JComponent)al.getSource();
 		
-		 
-		 
 		if(al.getSource() instanceof JButton)
 		{
 			JButton b = (JButton)al.getSource();
@@ -160,10 +162,6 @@ class BorderLayoutExample implements ActionListener{
 			 	panel5.setBackground(selectedColor);
 		
 		}
-		
-		
-		
-		
 		
 		
 		
@@ -216,12 +214,6 @@ class BorderLayoutExample implements ActionListener{
 					panel5.setBackground(jf.getBackground());
 			}
 		}
-		
-		
-		
-		
-		
-		
 		
 	}
 	
